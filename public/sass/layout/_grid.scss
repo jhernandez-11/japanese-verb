@@ -1,0 +1,10 @@
+body {
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 9rem 1fr 9rem;
+
+    @media only screen and (max-width: $bp-medium) {
+        grid-template-rows: 30rem 1fr max-content;
+    }
+}

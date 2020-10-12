@@ -1,0 +1,47 @@
+.header {
+    background: $color-black;
+
+    display: flex;
+    grid-template-columns: 24rem repeat(3, max);
+    align-items: center;
+    justify-content: space-evenly;
+    text-align: center;
+
+    @media only screen and (max-width: $bp-medium) {
+        flex-direction: column;
+    }
+
+    &__1__title {
+        position: absolute;
+        width: min-content;
+        color: $color-white;
+        font-size: $font-size-medium;
+        letter-spacing: .6rem;
+        margin: 0 $mp-large;
+        z-index: 1;
+
+        @media only screen and (max-width: $bp-medium) {
+            margin: $mp-medium;
+        }
+    }
+
+    &__1__nav-container {
+        display: grid;
+        grid-template-columns: min-content 1fr;
+        align-items: center;
+    }
+
+    &__2__text {
+        letter-spacing: .3rem;
+        color: $color-primary;
+        font-size: $font-size-small;
+        font-weight: 400;
+        margin: $mp-medium;
+        transition: all .3s;
+    
+        &:hover {
+            color: $color-white;
+            transform: scale(1.02);
+        }
+    }
+}

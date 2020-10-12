@@ -1,0 +1,22 @@
+.staggering-grid {
+    height: 9rem;
+    width: 24rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.el {
+    background-color: $color-primary;
+    height: 100%;
+    width: 100%;
+}
+
+.square1, .square2, .square3 {
+    height: 1rem;
+    width: 1rem;
+    color: $color-white;
+    z-index: 2;
+    background: transparent;
+    justify-self: start;
+}

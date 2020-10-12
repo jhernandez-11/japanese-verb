@@ -1,0 +1,25 @@
+.footer {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+    @media only screen and (max-width: $bp-medium) {
+        flex-direction: column;
+    }
+
+    &__text {
+        font-size: $font-size-small;
+        margin: $mp-medium;
+    }
+
+    &__anchor {
+        color: $color-black;
+        margin: $mp-medium;
+        font-size: $font-size-small;
+        transition: all .3s;
+
+        &:hover {
+            color: $color-primary;
+        }
+    }
+}

@@ -1,0 +1,91 @@
+.section {
+    background-image: url('./images/jpn-v-c_bg.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    &__1__input {
+        margin: $mp-medium 0;
+        width: 60vw;
+        height: 3rem;
+        border-radius: $br;
+        padding: $mp-large $mp-medium;
+        font-size: $font-size-small;
+        transition: all .3s;
+
+        &:focus {
+            outline: none;
+            border: 3px solid $color-primary;
+        }
+
+        @media only screen and (max-width: $bp-medium) {
+            width: 100vw;
+        }
+    }
+
+    &__1__main {
+        background: $color-white;
+        background-image: linear-gradient(to bottom, $color-white, rgba($color-black, .3));
+        height: max-content;
+        width: 60vw;
+        border-radius: $br;
+
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(6, 1fr);
+
+        @media only screen and (max-width: $bp-medium) {
+            width: 100vw;
+        }
+    }
+
+    &__2__container-title {
+        border: 3px solid $color-primary;
+        margin: $mp-medium;
+        padding-bottom: $mp-small;
+        background-color: $color-black;
+        color: $color-white;
+        border-radius: $br;
+
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        align-items: center;
+        justify-items: center;
+    }
+
+    &__2__container {
+        margin: $mp-small;
+
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        align-items: center;
+        justify-items: center;
+
+        &:not(:last-child) {
+            border-bottom: 1px solid rgba($color-black, .3);
+        }
+
+        &:last-child {
+            margin-bottom: $mp-medium;
+        }
+    }
+
+    &__3__text {
+        font-size: $font-size-small;
+
+        span {
+            color: $color-primary;
+        }
+    }
+
+    &__1__credits {
+        margin: $mp-medium;
+        padding: $mp-small $mp-medium;
+        border-radius: $br;
+        background-color: $color-white;
+    }
+}
